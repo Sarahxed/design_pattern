@@ -2,9 +2,10 @@
 """
 @author: Sarah
 @time: 2021/7/6 22:13
-@file: factory_abstract_method.py
+@file: abstract_factory.py
 @desc: 抽象工厂模式demo
 """
+from abc import abstractmethod, ABCMeta
 
 """
 抽象工厂模式：定义一个工厂类接口，让工厂子类来创建一系列相关或相互依赖的对象
@@ -22,7 +23,6 @@
 """
 例子：生产一部手机，需要手机壳，CPU，操作系统三类对象进行组装，其中每类对象都有不同的种类。对每个具体工厂，分别生产一部手机所需要的三个对象。
 """
-from abc import abstractmethod, ABCMeta
 
 
 # --------- 抽象产品 ---------
